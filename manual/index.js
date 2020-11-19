@@ -62,25 +62,48 @@
 /////////
 // let members = ['fitra', 'joni', 'eee'];
 
-let sekolahKoding = {
-    members : ['fitra', 'joni', 'eee'],
-    getMembers(){
-        this.members.map((name) =>{
-            console.log(this);
-        });
-    }
-};
+// let sekolahKoding = {
+//     members : ['fitra', 'joni', 'eee'],
+//     getMembers(){
+//         this.members.map((name) =>{
+//             console.log(this);
+//         });
+//     }
+// };
 
-console.log(sekolahKoding.getMembers());
-
-
+// console.log(sekolahKoding.getMembers());
 
 
+// eps 3
+generateTitle = () => {
+    return 'ini judul standar'
+}
+    createTag = (title = generateTitle(), tag = 'bebas') => {
+        console.log(' Forum ' + title + ' punya tag ' + tag);
+}
+createTag();
 
 
+// createTag = (title, tag = 'bebas') => {
+//     console.log(' Forum ' + title + ' punya tag ' + tag);
+// }
+
+// createTag('tampilan rusak');
 
 
+// eps 4 rest and spread
+// signIn = (username, password, umur) => {
+signIn = (...membee) => {
+    // console.log(username + ' punya password ' + password + 'umurnya' + umur)
+    console.log(membee)
+}
 
+// let data = ['john', '123' , 40]
+username = 'hilman'
+password = '123'
+umur = '12'
+// signIn(...data)
+signIn(username, password, umur)
 
 
 
