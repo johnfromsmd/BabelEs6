@@ -75,13 +75,13 @@
 
 
 // eps 3
-generateTitle = () => {
-    return 'ini judul standar'
-}
-    createTag = (title = generateTitle(), tag = 'bebas') => {
-        console.log(' Forum ' + title + ' punya tag ' + tag);
-}
-createTag();
+// generateTitle = () => {
+//     return 'ini judul standar'
+// }
+//     createTag = (title = generateTitle(), tag = 'bebas') => {
+//         console.log(' Forum ' + title + ' punya tag ' + tag);
+// }
+// createTag();
 
 
 // createTag = (title, tag = 'bebas') => {
@@ -93,25 +93,76 @@ createTag();
 
 // eps 4 rest and spread
 // signIn = (username, password, umur) => {
-signIn = (...membee) => {
-    // console.log(username + ' punya password ' + password + 'umurnya' + umur)
-    console.log(membee)
-}
+// signIn = (...membee) => {
+//     // console.log(username + ' punya password ' + password + 'umurnya' + umur)
+//     console.log(membee)
+// }
 
-// let data = ['john', '123' , 40]
-username = 'hilman'
-password = '123'
-umur = '12'
-// signIn(...data)
-signIn(username, password, umur)
-
-
+// // let data = ['john', '123' , 40]
+// username = 'hilman'
+// password = '123'
+// umur = '12'
+// // signIn(...data)
+// signIn(username, password, umur)
 
 
+// eps 5 template literal 
+// let username = 'john'
+// let umur = 40
+
+// // let text = "Member " + username + "umurnya " + umur;
+// let text = `Member ${username} umur ${40}`
+// let div = `
+//             <div> ${username} </div>
+//             <p> ${umur} </p>
+//             `
+
+// console.log(text)
+// console.log(div)
+
+// let username = 'john'
+// let umur = 12
+// test = (strings, username, umur) => {
+//     let string1 = strings[0]
+//     let string2 = strings[1]
+//     // console.log(strings)
+//     console.log(umur)
+// }
+// let output = test `nama saya adalah ${username} umurnya ${umur}`
+
+
+// eps 6 shorthand dan destructing object
+// names = 'john'
+// umur = 12
+
+// getData = () => {
+//     return `member ${names} umur ${umur}`
+// }
+
+// let member = { 
+//     names,
+//     umur,
+//     getData
+// }
+// console.log(member.getData())
 
 
 
 
 
+// let member = { 
+//     names : 'john',
+//     umur : 12
+// }
+
+// let {names, umur : age} = member
+
+// console.log(names, age)
 
 
+// let umurss = [1,2,3]
+// let [a,b,c] = umurss
+
+// console.log(a+b+c)
+
+// class eps 7
