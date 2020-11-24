@@ -166,3 +166,49 @@
 // console.log(a+b+c)
 
 // class eps 7
+class Members{
+    constructor(name, umur){
+        this.name = name
+        this.umur = umur
+    }
+
+    // getMember(name){
+        // return 'namanya ' + name
+    // }
+    getData(name){
+        return `namanya ${this.name} dan umurnya ${this.umur}`
+    }
+
+    static getPoint(){
+        return ' poinnya 40'
+    }
+}
+
+// let member = new Members('John', 12)
+// let member = new Members()
+// console.log(member.getMember('John'))
+let member = new Members('John', 12)
+// console.log(member.getData())
+console.log(Members.getPoint())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

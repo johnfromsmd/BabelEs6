@@ -1,5 +1,5 @@
-class Test {
+// class Test {
     // let nama = 'hilman';
-    // let nama = 'john';
-}
-console.log(Test);
+    let nama = 'john';
+// }
+console.log(nama);
