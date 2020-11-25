@@ -1,7 +1,14 @@
 "use strict";
 
-// class Test {
-// let nama = 'hilman';
-var nama = 'john'; // }
-
-console.log(nama);
+// // import * as 0app from './app'
+// import forum from './app/forum'
+// console.log(forum);
+// // console.log(forum);
+var getData = new Promise(function (resolve, reject) {
+  if (true) {
+    resolve('berhasil');
+  } else {
+    reject('gagal');
+  }
+});
+console.log(getData);
