@@ -3,12 +3,26 @@
 // console.log(forum);
 // // console.log(forum);
 
+// let getData = new Promise ((resolve, reject) => {
+//     if (true) {
+//         resolve('berhasil')
+//     } else {
+//         reject('gagal')
+//     }
+// });
+
+// console.log(getData);
+
 let getData = new Promise ((resolve, reject) => {
     if (true) {
         resolve('berhasil')
     } else {
         reject('gagal')
     }
-});
+}).then((msg) => {
+    console.log(msg);
+}).catch((msg) => {
+    console.log('ini dalam catch' + msg);
+})
 
 console.log(getData);
