@@ -12,15 +12,32 @@
 //     }
 // });
 // console.log(getData);
-var getData = new Promise(function (resolve, reject) {
-  if (true) {
-    resolve('berhasil');
-  } else {
-    reject('gagal');
-  }
-}).then(function (msg) {
-  console.log(msg);
-})["catch"](function (msg) {
-  console.log('ini dalam catch' + msg);
-});
-console.log(getData);
+// let getData = new Promise ((resolve, reject) => {
+//     if (true) {
+//         resolve('berhasil')
+//     } else {
+//         reject('gagal')
+//     }
+// }).then((msg) => {
+//     console.log(msg);
+// }).catch((msg) => {
+//     console.log('ini dalam catch' + msg);
+// })
+// console.log(getData);
+// let getData = new Promise ((resolve, reject) => {
+//     if (true) {
+//         resolve('berhasil')
+//     } else {
+//         reject('gagal')
+//     }
+// })
+// console.log(getData.then((msg) => {
+//     console.log('ini dalam then2' + msg)
+// }, (msg) => {
+//     console.log('ini dalam catch2 ' + msg)
+// }))
+var getData = function getData() {
+  return new Promise(function (resolve, reject) {});
+};
+
+console.log(getData());
